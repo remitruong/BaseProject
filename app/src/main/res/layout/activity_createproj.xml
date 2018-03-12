@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appmob.projet_app_mob.activity.CreateProj"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="4dp"
+        android:text="Vous êtes dans la création de projet"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintBottom_toTopOf="@+id/etNomProjet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCréerProjet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="232dp"
+        android:layout_marginStart="16dp"
+        android:onClick="writeEtape"
+        android:text="Valider"
+        android:background="@drawable/button_design"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomEtapes" />
+
+    <EditText
+        android:id="@+id/etNomProjet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="NomProjet"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etNomEtapes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome" />
+
+    <EditText
+        android:id="@+id/etNomEtapes"
+        android:layout_width="460dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Séparez vos étapes par un espace"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btnCréerProjet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomProjet" />
+
+</android.support.constraint.ConstraintLayout>

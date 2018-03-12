@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/midLightPurple"
+    tools:context="com.appmob.projet_app_mob.activity.MainActivity">
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="105dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="BaseProject"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/InscBtn"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/button_design"
+        android:onClick="inscription"
+        android:text="Inscription"
+        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/button_design"
+        android:onClick="connexion"
+        android:text="Connexion"
+        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+        app:layout_constraintBottom_toTopOf="@+id/InscBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Welcome" />
+
+
+</android.support.constraint.ConstraintLayout>
